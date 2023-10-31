@@ -1,71 +1,46 @@
-import { fontRampart } from "../../../styles/fonts"
+import { fontRampart, fontSatisfy } from "../../../styles/fonts"
 
 
- const Skill = () => {
+const Skill = () => {
 
- 
-  
+
+
   return (
 
     <>
 
-<section className="bg-pink-300 h-auto" >
-<h3 style={fontRampart.style} className="text-white text-center text-8xl p-10">My Skills</h3>
+      <section id="sectionId" className="bg-pink-300 h-auto" >
+        <h3 style={fontRampart.style} className="text-white text-center text-8xl p-10">My Skills</h3>
+        <div className="flex flex-row justify-around">
+          <div>
+            <h4 style={fontRampart.style} className="text-5xl text-white ml-32">Frontend</h4>
+            <ul className="ml-36 mt-6">
+              <li style={fontRampart.style} className="bg-yellow-200 text-black text-center rounded-3xl text-3xl mb-4 shadow-xl ">Html</li>
 
-<img className="ml-[35%] mt-10" src="https://res.cloudinary.com/dt7h6qci4/image/upload/v1698462236/Dise%C3%B1o_sin_t%C3%ADtulo_47_z9qngs.png" alt="" />
+              <li style={fontRampart.style} className="bg-yellow-200  text-black text-center  rounded-3xl text-3xl mb-4 shadow-xl" >Css</li>
 
-<div className="flex flex-row justify-center items-center gap-6 p-20 -translate-y-[200%] ">
+              <li style={fontRampart.style} className="bg-yellow-200 text-black text-center  rounded-3xl text-3xl mb-4 shadow-xl">JavaScript</li>
+              <li style={fontRampart.style} className="bg-yellow-200  text-black text-center  rounded-3xl text-3xl mb-4 shadow-xl">React</li>
+              <li style={fontRampart.style} className="bg-yellow-200  text-black text-center  rounded-3xl text-3xl mb-4  shadow-xl">NextJS</li>
+              <li style={fontRampart.style} className="bg-yellow-200 text-black text-center  rounded-3xl text-3xl mb-4 shadow-xl">Boostrap</li>
+              <li style={fontRampart.style}className="bg-yellow-200 text-black text-center  rounded-3xl text-3xl mb-4 shadow-xl">Tailwind</li>
+            </ul>
+          </div>
+          <div>
+            <h4 style={fontRampart.style} className="text-5xl text-white mr-40">backend</h4>
+            <ul className=" mr-36 mt-6">
+              <li style={fontRampart.style} className="bg-yellow-200 text-black rounded-3xl text-center text-3xl mb-4 shadow-xl ">NodeJS</li>
+              <li style={fontRampart.style} className="bg-yellow-200 text-black rounded-3xl text-center text-3xl mb-4 shadow-xl" >MongoDB</li>
+              
+            </ul>
+          </div>
+        </div>
+        <img className="ml-[35%] -mt-72  " src="https://res.cloudinary.com/dt7h6qci4/image/upload/v1698462236/Dise%C3%B1o_sin_t%C3%ADtulo_47_z9qngs.png" alt="" />
 
-<div className="rounded-full w-64 h-auto hover:scale-125 cursor-pointer translate-y-[320%]  " >
-<img src="https://res.cloudinary.com/dt7h6qci4/image/upload/v1698612878/Dise%C3%B1o_sin_t%C3%ADtulo_48_thl4jp.png" alt="" />
-  </div>
-  
 
-<div className="rounded-full w-56 h-auto hover:scale-125 cursor-pointer translate-y-[180%] -translate-x-36   ">
-  <img src="https://res.cloudinary.com/dt7h6qci4/image/upload/v1698623050/Dise%C3%B1o_sin_t%C3%ADtulo_50_u0kpbx.png" alt="" />
-</div>
-
-<div className="rounded-full w-56 h-auto hover:scale-125 cursor-pointer  translate-y-[250%]  ">
-  <img src="https://res.cloudinary.com/dt7h6qci4/image/upload/v1698623414/Dise%C3%B1o_sin_t%C3%ADtulo_51_kmlj52.png" alt="" />
-  </div>
+      </section>
 
 
-<div className="rounded-full w-56 h-auto  hover:scale-125 cursor-pointer">
-  <img src="https://res.cloudinary.com/dt7h6qci4/image/upload/v1698623414/Dise%C3%B1o_sin_t%C3%ADtulo_55_rnpxpc.png" alt="" />
-  </div>
-
-<div className="rounded-full w-56 h-auto  hover:scale-125 cursor-pointer  translate-y-[480%] -translate-x-60  ">
-  <img src="https://res.cloudinary.com/dt7h6qci4/image/upload/v1698623414/Dise%C3%B1o_sin_t%C3%ADtulo_53_qxd4mn.png" alt="" />
-  </div>
-
-<div className="rounded-full w-56 h-auto  hover:scale-125 cursor-pointer translate-y-[400%]">
-  <img src="https://res.cloudinary.com/dt7h6qci4/image/upload/v1698623414/Dise%C3%B1o_sin_t%C3%ADtulo_52_gczpg3.png" alt="" />
-  </div>
-
-<div className="rounded-full w-56 h-auto  hover:scale-125 cursor-pointer  translate-y-[460%] translate-x-36  ">
-  <img src="https://res.cloudinary.com/dt7h6qci4/image/upload/v1698623414/Dise%C3%B1o_sin_t%C3%ADtulo_56_wilfn4.png" alt="" />
-  </div>
-
-<div className="rounded-full w-56 h-auto   hover:scale-125 cursor-pointer  translate-y-[220%]  ">
-  <img src="https://res.cloudinary.com/dt7h6qci4/image/upload/v1698623414/Dise%C3%B1o_sin_t%C3%ADtulo_54_hipc9r.png" alt="" />
-  </div>
-
-<div className="rounded-full w-56 h-auto  hover:scale-125 cursor-pointer  translate-y-[320%] translate-x-28  ">
-  <img src="https://res.cloudinary.com/dt7h6qci4/image/upload/v1698624310/Dise%C3%B1o_sin_t%C3%ADtulo_59_xsnbfu.png" alt="" />
-  </div>
-
-<div className="rounded-full w-56 h-auto  hover:scale-125 cursor-pointer translate-y-[40%] -translate-x-28  ">
-  <img src="https://res.cloudinary.com/dt7h6qci4/image/upload/v1698623414/Dise%C3%B1o_sin_t%C3%ADtulo_57_p7n5qd.png" alt="" />
-  </div>
-
-<div className="rounded-full w-56 h-auto  hover:scale-125 cursor-pointer">
-  <img src="https://res.cloudinary.com/dt7h6qci4/image/upload/v1698623413/Dise%C3%B1o_sin_t%C3%ADtulo_58_lr8i4v.png" alt="" />
-  </div>
-
-</div>
-    </section>
-    
-    
     </>
   )
 }

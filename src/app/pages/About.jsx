@@ -4,7 +4,7 @@ import { fontRampart } from "../../../styles/fonts"
   return (
     <>
     
-<section>
+<section id="aboutId">
 
 <h2 style={fontRampart.style}  className=" absolute ml-[30%] text-white text-7xl mt-8">Un poquito de mi...</h2>
 

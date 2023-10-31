@@ -1,7 +1,8 @@
-import Image from 'next/image'
+
 import About from './pages/About'
 import Skill from './pages/Skill'
 import { fontRampart, fontSatisfy } from '../../styles/fonts'
+import Contacto from './pages/Contacto'
 
 export default function Home() {
   return (
@@ -14,13 +15,14 @@ export default function Home() {
           tecnología.</span> ¡Descubre mi mundo digital!</p>
       </div>
       <div className='hidden sm:block bg-yellow-200 w-2/5 h-auto'></div>
-      <img className=' hidden sm:block absolute w-1/4 left-[60%] -translate-x-[50%] top-[50%] -translate-y-[50%] ' src='https://res.cloudinary.com/dt7h6qci4/image/upload/v1698107663/Dise%C3%B1o_sin_t%C3%ADtulo_19_iw6hbd.png'/>
-      <img className='hidden sm:block absolute w-44 left-[75%] -translate-x-[50%] top-[57%]  ' src='https://res.cloudinary.com/dt7h6qci4/image/upload/v1698111457/Meories_4_ymhfun.png'/>
+      <img className=' hidden sm:block absolute w-1/4 left-[60%] -translate-x-[50%] top-[50%] -translate-y-[50%] ' alt='principal' src='https://res.cloudinary.com/dt7h6qci4/image/upload/v1698107663/Dise%C3%B1o_sin_t%C3%ADtulo_19_iw6hbd.png'/>
+      <img className='hidden sm:block absolute w-44 left-[75%] -translate-x-[50%] top-[57%]  ' alt='westy' src='https://res.cloudinary.com/dt7h6qci4/image/upload/v1698111457/Meories_4_ymhfun.png'/>
     
     </div>
 
     <About/>
     <Skill/>
+    <Contacto/>
      
     
     </>
