@@ -10,10 +10,10 @@ const Skill = () => {
     <>
 
       <section id="sectionId" className="bg-pink-300 h-auto" >
-        <h3 style={fontRampart.style} className="text-white text-center text-8xl p-10">My Skills</h3>
-        <div className="flex flex-row justify-around">
+        <h3 style={fontRampart.style} className="text-white text-center lg:text-8xl text-5xl p-10">My Skills</h3>
+        <div className="flex flex-row lg:justify-around ">
           <div>
-            <h4 style={fontRampart.style} className="text-5xl text-white ml-32">Frontend</h4>
+            <h4 style={fontRampart.style} className="lg:text-5xl text-4xl text-white ml-32">Frontend</h4>
             <ul className="ml-36 mt-6">
               <li style={fontRampart.style} className="bg-yellow-200 text-black text-center rounded-3xl text-3xl mb-4 shadow-xl ">Html</li>
 
@@ -27,7 +27,7 @@ const Skill = () => {
             </ul>
           </div>
           <div>
-            <h4 style={fontRampart.style} className="text-5xl text-white mr-40">backend</h4>
+            <h4 style={fontRampart.style} className="lg:text-5xl text-4xl text-white mr-40">backend</h4>
             <ul className=" mr-36 mt-6">
               <li style={fontRampart.style} className="bg-yellow-200 text-black rounded-3xl text-center text-3xl mb-4 shadow-xl ">NodeJS</li>
               <li style={fontRampart.style} className="bg-yellow-200 text-black rounded-3xl text-center text-3xl mb-4 shadow-xl" >MongoDB</li>
@@ -35,7 +35,7 @@ const Skill = () => {
             </ul>
           </div>
         </div>
-        <img className="ml-[35%] -mt-72  " src="https://res.cloudinary.com/dt7h6qci4/image/upload/v1698462236/Dise%C3%B1o_sin_t%C3%ADtulo_47_z9qngs.png" alt="" />
+        <img className=" hidden sm:block   ml-[35%] -mt-72  " src="https://res.cloudinary.com/dt7h6qci4/image/upload/v1698462236/Dise%C3%B1o_sin_t%C3%ADtulo_47_z9qngs.png" alt="" />
 
 
       </section>

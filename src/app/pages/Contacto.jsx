@@ -1,10 +1,16 @@
 'use client'
 
-import { useState } from "react";
+import {  useState } from "react";
 import { fontRampart, fontSatisfy } from "../../../styles/fonts";
 
 
+
+
 const Contacto = () => {
+
+
+
+
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -21,7 +27,7 @@ const Contacto = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("../api/contact", {
+      const response = await fetch("/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -44,7 +50,7 @@ const Contacto = () => {
 
   return (
     <>
-      <section id="contactoId" className="bg-slate-800 w-full h-full  ">
+      <section   id="contactoId" className="bg-slate-800 w-full h-full relative z-20">
         <h2 style={fontRampart.style} className="text-white pt-10 text-7xl text-center">
           Hablemos...
         </h2>
@@ -107,7 +113,7 @@ const Contacto = () => {
                 />
               </div>
               <div className="mt-4">
-                <button type="submit" className="bg-violet-300 text-white px-4 py-2 rounded-e-3xl hover:bg-yellow-300">
+                <button type="submit" className="bg-violet-300 text-white px-4 py-2 rounded-e-3xl hover:bg-yellow-300 hover:scale-125">
                   Enviar
                 </button>
               </div>

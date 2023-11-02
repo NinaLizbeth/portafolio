@@ -1,12 +1,15 @@
+import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 require('dotenv').config(); // Cargar variables de entorno
 
-async function handleContactForm(req, res) {
-  if (req.method === "POST") {
-    const { name, email, subject, message } = req.body;
+export async function POST(req) {
+  console.log("ruta api")
+ console.log("user",  process.env.GMAIL_EMAIL)
+console.log("pass", process.env.GMAIL_PASSWORD)
+const {name, email, subject, message} = await req.json()
 
     const transporter = nodemailer.createTransport({
-      service: "Gmail",
+      service: "gmail",
       auth: {
         user: process.env.GMAIL_EMAIL,
         pass: process.env.GMAIL_PASSWORD,
@@ -22,14 +25,14 @@ async function handleContactForm(req, res) {
 
     try {
       await transporter.sendMail(mailOptions);
+      console.log("Todo bien")
+      return NextResponse.json({message:"Correo enviado con exito"})
       res.status(200).send("Correo electrónico enviado con éxito.");
     } catch (error) {
       console.error(error);
-      res.status(500).send("Error al enviar el correo electrónico.");
+      return NextResponse.json({message:"error al enviar correo"})
     }
-  } else {
-    res.status(405).send("Método no permitido");
-  }
+
 }
 
-export default handleContactForm; // Exporta la función con nombre
+
