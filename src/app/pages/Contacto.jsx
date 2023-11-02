@@ -51,14 +51,14 @@ const Contacto = () => {
   return (
     <>
       <section   id="contactoId" className="bg-slate-800 w-full h-full relative z-20">
-        <h2 style={fontRampart.style} className="text-white pt-10 text-7xl text-center">
+        <h2 style={fontRampart.style} className="text-white pt-10 lg:text-7xl text-6xl text-center">
           Hablemos...
         </h2>
 
-        <div className="flex flex-row">
-          <img className="w-[40%] h-[40%] mt-24" src="https://res.cloudinary.com/dt7h6qci4/image/upload/v1698696354/Meories_13_wnpyy5.png" alt="" />
+        <div className="flex flex-row ">
+          <img className="hidden sm:block w-[40%] h-[40%] mt-24" src="https://res.cloudinary.com/dt7h6qci4/image/upload/v1698696354/Meories_13_wnpyy5.png" alt="" />
 
-          <div className="w-1/2 mx-auto p-8">
+          <div className="w-full lg:w-1/2 mx-auto p-8">
             <form className="py-36" onSubmit={handleSubmit}>
               <div className="mb-3">
                 <label style={fontSatisfy.style} htmlFor="name" className="block text-yellow-200 text-2xl ">

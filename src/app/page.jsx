@@ -3,6 +3,7 @@ import About from './pages/About'
 import Skill from './pages/Skill'
 import { fontRampart, fontSatisfy } from '../../styles/fonts'
 import Contacto from './pages/Contacto'
+import Navbar from './pages/Navbar'
 
 
 
@@ -11,10 +12,11 @@ export default function Home() {
 
   return (
     <>
-    
+      <Navbar/>
     <div className='flex flex-row w-full min-h-screen'>
       <div className='h-screen bg-green-300 flex justify-center items-center w-full lg:w-3/5  flex-col p-10 md:pr-52 '>
-        <h3 style={fontSatisfy.style}  className=' text-violet-400 font-bold text-5xl lg:text-start w-full  -skew-y-6 mb-14 ml-28 '>👋 Hola soy Nina </h3>
+    
+        <p style={fontSatisfy.style}  className=' text-violet-400 font-bold text-5xl lg:text-start w-full  -skew-y-6 mb-14 ml-28 '>👋 Hola soy Nina </p>
         <p className=' text-center lg:text-left  text-5xl lg:text-7xl font-bold '>Y creo experiencias web únicas que fusionan <span 
         style={fontRampart.style} className='text-pink-300 text-6xl font-bold hover:scale-150'>creatividad</span> y <span style={fontRampart.style}className='text-white text-6xl font-bold'>
           tecnología.</span> ¡Descubre mi mundo digital!</p>
