@@ -2,21 +2,20 @@
 
 import {  useState } from "react";
 import { fontRampart, fontSatisfy } from "../../../styles/fonts";
+import Swal from "sweetalert2";
 
 
 
 
 const Contacto = () => {
+const initialStateForm = {
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
+}
 
-
-
-
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
+const [form, setForm] = useState(initialStateForm);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -37,7 +36,15 @@ const Contacto = () => {
 
       if (response.status === 200) {
         // Envío de correo electrónico exitoso
-        // Puedes agregar una confirmación o redirección aquí
+setForm(initialStateForm)
+
+Swal.fire({
+  position: 'top-end',
+  icon: 'success',
+  title: 'Su mensaje va en camino',
+  showConfirmButton: false,
+  timer: 1500
+})
         console.log("Correo electrónico enviado con éxito");
       } else {
         // Maneja errores

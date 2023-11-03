@@ -2,9 +2,9 @@
 import Link from "next/link"
 import {  FontKalam, fontRampart } from "../../../styles/fonts"
 import GoButton from "../components/GoButton"
-import Contacto from "../pages/Contacto"
-import Navbar from "../pages/Navbar"
+
 import ProyectNavbar from "../components/ProyectNavbar"
+import Contacto from "../pages/Contacto"
 
 
 

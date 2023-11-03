@@ -20,11 +20,11 @@ const ProyectNavbar = () => {
               <Hamburger/>
             </button>
             {openBurger && (
-    <div className="bg-yellow-200 w-full h-screen z-50  ">
+    <div className="bg-yellow-200  w-full h-screen z-50  ">
             <ul className="flex flex-col justify-center items-center gap-5 mt-5">
-              <Link href="" onClick={onToggleBurgerMenu} className="text-3xl" style={FontKalam.style} >Sobre mi</Link>
+              <Link href="/" onClick={onToggleBurgerMenu} className="text-3xl" style={FontKalam.style} >Sobre mi</Link>
               <hr className="w-full" />
-              <Link href="" onClick={onToggleBurgerMenu} className="text-3xl" style={FontKalam.style} >skill</Link>
+              <Link href="/" onClick={onToggleBurgerMenu} className="text-3xl" style={FontKalam.style} >skill</Link>
               <hr className="w-full" />
               <Link href="" onClick={onToggleBurgerMenu} className="text-3xl"style={FontKalam.style}  >Proyectos</Link>
               <hr className="w-full" />
