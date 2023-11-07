@@ -67,7 +67,7 @@ Swal.fire({
 
           <div className="w-full lg:w-1/2 mx-auto p-8">
             <form className="py-36" onSubmit={handleSubmit}>
-              <div className="mb-3">
+              <div className="mb-3 ronde">
                 <label style={fontSatisfy.style} htmlFor="name" className="block text-yellow-200 text-2xl ">
                   Nombre
                 </label>
@@ -77,7 +77,7 @@ Swal.fire({
                   name="name"
                   value={form.name}
                   onChange={handleChange}
-                  className="w-full border border-gray-300 p-2 rounded focus:outline-none"
+                  className="w-full border border-gray-300 p-2 rounded-2xl focus:outline-none"
                   required
                 />
               </div>
@@ -91,7 +91,7 @@ Swal.fire({
                   name="email"
                   value={form.email}
                   onChange={handleChange}
-                  className="w-full border border-gray-300 p-2 rounded focus:outline-none"
+                  className="w-full border border-gray-300 p-2 rounded-2xl focus:outline-none"
                 />
               </div>
               <div className="mb-4">
@@ -104,7 +104,7 @@ Swal.fire({
                   name="subject"
                   value={form.subject}
                   onChange={handleChange}
-                  className="w-full border border-gray-300 p-2 rounded focus:outline-none"
+                  className="w-full border border-gray-300 p-2 rounded-2xl  focus:outline-none"
                 />
               </div>
               <div className="mb-4">
@@ -116,7 +116,7 @@ Swal.fire({
                   name="message"
                   value={form.message}
                   onChange={handleChange}
-                  className="w-full border border-gray-300 p-2 rounded focus:outline-none h-40"
+                  className="w-full border border-gray-300 p-2 rounded-2xl focus:outline-none h-40"
                 />
               </div>
               <div className="mt-4">

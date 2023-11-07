@@ -40,8 +40,8 @@ const ProyectNavbar = () => {
       <nav className="hidden sm:block absolute top-4 lefth-14 p-4 cursor-pointer">
         
         <ul className="flex flex-row gap-6 ml-auto">
-          <a href="#aboutId"><li className="text-white p-2 rounded-lg  bg-pink-300 shadow-xl hover:scale-125">Sobre mi</li></a>
-          <a href="#sectionId"><li className="text-white p-2 rounded-lg  bg-pink-300 shadow-xl hover:scale-125 " >Skill</li></a>
+          <Link href="/"><li className="text-white p-2 rounded-lg  bg-pink-300 shadow-xl hover:scale-125">Inicio</li></Link>
+          
           <Link href="/proyectos"><li className="text-white p-2 rounded-lg  bg-pink-300 shadow-xl hover:scale-125" >Proyectos</li></Link>
           <li className="text-white p-2 rounded-lg  bg-pink-300 shadow-xl hover:scale-125">Descarga mi CV</li>
           <a href="#contactoId"><li className="text-white p-2 rounded-lg  bg-pink-300 shadow-2xl  hover:scale-125">Contacto</li></a>

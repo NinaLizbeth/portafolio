@@ -13,8 +13,8 @@ const Skill = () => {
         <h3 style={fontRampart.style} className="text-white text-center lg:text-8xl text-5xl p-10">My Skills</h3>
         <div className="flex flex-row lg:justify-around ">
           <div>
-            <h4 style={fontRampart.style} className="lg:text-5xl text-4xl text-white ml-32">Frontend</h4>
-            <ul className="ml-36 mt-6">
+            <h4 style={fontRampart.style} className="lg:text-5xl text-4xl text-white md:ml-32">Frontend</h4>
+            <ul className="md:ml-36 mt-6">
               <li style={fontRampart.style} className="bg-yellow-200 text-black text-center rounded-3xl text-3xl mb-4 shadow-xl ">Html</li>
 
               <li style={fontRampart.style} className="bg-yellow-200  text-black text-center  rounded-3xl text-3xl mb-4 shadow-xl" >Css</li>
