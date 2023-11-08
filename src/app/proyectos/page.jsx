@@ -5,6 +5,7 @@ import GoButton from "../components/GoButton"
 
 import ProyectNavbar from "../components/ProyectNavbar"
 import Contacto from "../pages/Contacto"
+import Image from "next/image"
 
 
 
@@ -18,7 +19,11 @@ const Proyectos = () => {
       <h2  style={fontRampart.style} className="text-center  text-white py-20 text-8xl ">Proyectos...</h2>
       <div className="flex flex-wrap gap-8  justify-center rounded-xl mx-20 h-full  ">
     <div className="max-w-lg bg-yellow-200 rounded-3xl shadow-2xl ">
-      <img className="w-[90%] ml-5 py-5" src="https://res.cloudinary.com/dt7h6qci4/image/upload/v1698799776/Captura_de_pantalla_2023-10-31_214832_ojooqn.png" alt="" />
+      <Image
+      width={500}
+      height={500}
+      
+      className="w-[90%] ml-5 py-5" src="https://res.cloudinary.com/dt7h6qci4/image/upload/v1698799776/Captura_de_pantalla_2023-10-31_214832_ojooqn.png" alt="" />
       <h5 style={fontRampart.style} className="text-4xl   text-black px-2">
      BrightBooks
       </h5>

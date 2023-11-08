@@ -123,8 +123,8 @@ Swal.fire({
                   className="w-full border border-gray-300 p-2 rounded-2xl focus:outline-none h-40"
                 />
               </div>
-              <div className="mt-4">
-                <button type="submit" className="bg-violet-300 text-white px-4 py-2 rounded-e-3xl hover:bg-yellow-300 hover:scale-125">
+              <div className=" flex justify-center items-center mt-4">
+                <button style={fontRampart.style} type="submit" className=" w-28 h-14 lg:ml-3 text-2xl bg-pink-300 text-white flex justify-center items-center px-4 py-2 rounded-xl hover:bg-green-200 hover:scale-125">
                   Enviar
                 </button>
               </div>

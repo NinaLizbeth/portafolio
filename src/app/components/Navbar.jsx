@@ -7,6 +7,7 @@ import { useState } from "react"
 import CloseSvg from "./CloseSvg"
 import DownLoadSvg from "./DownLoadSvg"
 import { usePathname } from "next/navigation"
+import ArrowSvg from "./ArrowSvg"
 
 const Navbar = () => {
   const pathName = usePathname()
@@ -46,16 +47,22 @@ const Navbar = () => {
       <nav className="hidden sm:block absolute top-4 lefth-14 p-4 cursor-pointer">
         
         <ul className="flex flex-row gap-6 ml-auto">
-          <a href="#aboutId"><li className="text-white p-2 rounded-lg  bg-pink-300 shadow-xl hover:scale-125">Sobre mi</li></a>
-          <a href="#sectionId"><li className="text-white p-2 rounded-lg  bg-pink-300 shadow-xl hover:scale-125 " >Skill</li></a>
-          <Link href="/proyectos"><li className="text-white p-2 rounded-lg  bg-pink-300 shadow-xl hover:scale-125" >Proyectos</li></Link>
-          <a href="#contactoId"><li className="text-white p-2 rounded-lg  bg-pink-300 shadow-2xl  hover:scale-125">Contacto</li></a>
-          <li className="text-white p-2 rounded-lg  bg-pink-300 shadow-xl cursor-auto">Descarga mi CV</li>
+          <a style={fontRampart.style} href="#aboutId"><li className="text-white p-2 rounded-lg  bg-pink-300 shadow-xl hover:scale-125 text-2xl">Sobre mi</li></a>
+          <a style={fontRampart.style} href="#sectionId"><li className="text-white p-2 rounded-lg  bg-pink-300 shadow-xl hover:scale-125 text-2xl " >Skill</li></a>
+          <Link style={fontRampart.style} href="/proyectos"><li className="text-white p-2 rounded-lg  bg-pink-300 shadow-xl hover:scale-125 text-2xl" >Proyectos</li></Link>
+          <a style={fontRampart.style} href="#contactoId"><li className="text-white p-2 rounded-lg  bg-pink-300 shadow-2xl  hover:scale-125 text-2xl">Contacto</li></a>
+         
         </ul>
-        <a href="/pdf/cv.pdf" download ><DownLoadSvg className="w-32 ml-[94%] hover:scale-110 -my-[22%]"/></a>
+        <a href="/pdf/cv.pdf" download ><DownLoadSvg className="w-32 ml-[98%] l hover:scale-110 -my-[22%]"/></a>
+
+        
 
       
       </nav>
+      <div className="border bg-white hidden sm:block ">
+      <p style={fontSatisfy.style} className=" text-pink-400 flex justify-end ml-[33%] mt-28 absolute text-2xl">Descarga mi cv </p>
+ <ArrowSvg className="absolute w-14 ml-[30%] mt-5"/>
+ </div>
      
       <Link href="/"><h2 style={fontSatisfy.style}  className="absolute lg:right-36 right-14 mt-7 lg:mt-5 text-4xl lg:text-6xl text-pink-400  hover:scale-125">Nina </h2></Link>
     </>

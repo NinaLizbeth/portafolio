@@ -20,7 +20,7 @@ export default function Home() {
       <div className='h-screen bg-green-300 flex justify-center items-center w-full lg:w-3/5  flex-col p-10 md:pr-52 '>
   
         <p style={fontSatisfy.style}  className=' text-violet-400 font-bold text-4xl lg:text-5xl lg:text-start w-full   mb-3 lg:ml-0 ml-0  mt-20'>👋 Hola, soy Nina </p>
-        <p className=' text-center lg:text-left  text-4xl   lg:text-7xl font-bold mb-7 '>Y creo experiencias web únicas que fusionan <motion.span  
+        <p className=' text-center lg:text-left  text-4xl   lg:text-7xl font-bold mb-7 '>Creo experiencias web únicas que fusionan <motion.span  
         style={fontRampart.style} className='text-pink-300 lg:text-7xl text-5xl font-bold hover:scale-150'
         
         >creatividad</motion.span> y <span style={fontRampart.style}className='text-white lg:text-7xl text-5xl font-bold'>
