@@ -26,7 +26,7 @@ transition={{duration:1}}
 initial="inicial"
 whileInView="entrada"
 variants={variantes}
-className=" w-80 h-80 lg:w-96 lg:h-96 border-4 rounded-xl shadow-2xl mt-44">
+className=" w-80 h-80 lg:w-96 lg:h-96 border-4 rounded-xl shadow-2xl  mt-20 lg:mt-44">
     <div className="flex flex-row p-2 gap-2">
       <div className="rounded-full w-5 h-5 bg-pink-300"></div>
       <div  className="rounded-full w-5 h-5 bg-yellow-200"></div>
@@ -40,7 +40,7 @@ className=" w-80 h-80 lg:w-96 lg:h-96 border-4 rounded-xl shadow-2xl mt-44">
   whileInView="entrada"
   variants={variantes}
   
-  className=" w-80 h-80 lg:w-96 lg:h-96 border-4 rounded-xl shadow-2xl mt-44"><div className="flex flex-row p-2 gap-2">
+  className=" w-80 h-80 lg:w-96 lg:h-96 border-4 rounded-xl shadow-2xl mt-20 lg:mt-44"><div className="flex flex-row p-2 gap-2">
       <div className="rounded-full w-5 h-5 bg-pink-300"></div>
       <div  className="rounded-full w-5 h-5 bg-yellow-200"></div>
       <div  className="rounded-full w-5 h-5 bg-green-300"></div>
@@ -51,7 +51,7 @@ className=" w-80 h-80 lg:w-96 lg:h-96 border-4 rounded-xl shadow-2xl mt-44">
   initial="inicial"
   whileInView="entrada"
   variants={variantes}
-  className="w-80 h-80 lg:w-96 lg:h-96 border-4 rounded-xl shadow-2xl mt-44">
+  className="w-80 h-80 lg:w-96 lg:h-96 border-4 rounded-xl shadow-2xl mt-20 lg:mt-44">
   <div className="flex flex-row p-2 gap-2">
       <div className="rounded-full w-5 h-5 bg-pink-300"></div>
       <div  className="rounded-full w-5 h-5 bg-yellow-200"></div>
