@@ -57,7 +57,7 @@ const Navbar = () => {
       
       </nav>
      
-      <Link href="/"><h2 style={fontSatisfy.style}  className="absolute lg:right-36 right-14 mt-7 lg:mt-5 text-5xl lg:text-6xl text-pink-400  hover:scale-125">Nina </h2></Link>
+      <Link href="/"><h2 style={fontSatisfy.style}  className="absolute lg:right-36 right-14 mt-7 lg:mt-5 text-4xl lg:text-6xl text-pink-400  hover:scale-125">Nina </h2></Link>
     </>
   )
 }
