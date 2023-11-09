@@ -68,7 +68,7 @@ Swal.fire({
           <Image
           width={500}
           height={500}
-           className="hidden sm:block w-[40%] h-[40%] mt-24" src="https://res.cloudinary.com/dt7h6qci4/image/upload/v1698696354/Meories_13_wnpyy5.png" alt="" />
+           className="hidden sm:block w-[32%] h-[40%] mt-24" src="https://res.cloudinary.com/dt7h6qci4/image/upload/v1699571408/flecha_1_uak5rg.png" alt="" />
 
           <div className="w-full lg:w-1/2 mx-auto p-8">
             <form className="lg:py-36" onSubmit={handleSubmit}>
@@ -134,7 +134,7 @@ Swal.fire({
                 bottom: 50,
               }}
                className=" flex justify-center items-center mt-4">
-                <button style={fontRampart.style} type="submit" className=" w-28 h-14 lg:ml-3 text-2xl bg-pink-300 text-white flex justify-center items-center px-4 py-2 rounded-xl hover:bg-green-200 hover:scale-125">
+                <button style={fontRampart.style} type="submit" className=" w-28 h-14 lg:ml-3 text-2xl bg-pink-300 text-white flex justify-center items-center px-4 py-2 rounded-xl  hover:scale-125">
                   Enviar
                 </button>
                 </motion.div>

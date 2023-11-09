@@ -1,13 +1,13 @@
 'use client'
 
 import Link from "next/link"
-import { FontKalam, fontRampart, fontSatisfy } from "../../../styles/fonts"
-import Hamburger from "./Hamburger"
+import { FontKalam, fontRampart, fontSatisfy } from "../../../../styles/fonts"
+import Hamburger from "../svg/Hamburger"
 import { useState } from "react"
-import CloseSvg from "./CloseSvg"
-import DownLoadSvg from "./DownLoadSvg"
+import CloseSvg from "../svg/CloseSvg"
+import DownLoadSvg from "../svg/DownLoadSvg"
 import { usePathname } from "next/navigation"
-import ArrowSvg from "./ArrowSvg"
+import ArrowSvg from "../svg/ArrowSvg"
 
 const Navbar = () => {
   const pathName = usePathname()
@@ -27,7 +27,7 @@ const Navbar = () => {
               <Hamburger/>
             </button>
             {openBurger && (
-    <div style={{ zIndex: 2 }} className="bg-yellow-200 w-full h-auto rounded-2xl   ">
+    <div  className="bg-yellow-200 w-full h-auto rounded-2xl mt-8  ">
             <ul className="flex flex-col justify-center items-center gap-5  content-center">
               <Link href="#aboutId" onClick={onToggleBurgerMenu} className="text-3xl mt-8" style={fontRampart.style} >Sobre mi</Link>
               <hr className="w-full" />
@@ -60,7 +60,7 @@ const Navbar = () => {
       
       </nav>
       <div className="border bg-white hidden sm:block ">
-      <p style={fontSatisfy.style} className=" text-pink-400 flex justify-end ml-[33%] mt-28 absolute text-2xl">Descarga mi cv </p>
+      <p style={fontSatisfy.style} className=" text-pink-400 flex justify-end ml-[34%] mt-28 absolute text-2xl">Descarga mi cv </p>
  <ArrowSvg className="absolute w-14 ml-[30%] mt-5"/>
  </div>
      

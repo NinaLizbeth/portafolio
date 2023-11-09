@@ -1,12 +1,12 @@
 'use client'
 
 import Link from "next/link"
-import { FontKalam, fontRampart, fontSatisfy } from "../../../styles/fonts"
-import Hamburger from "../components/Hamburger"
+import { FontKalam, fontRampart, fontSatisfy } from "../../../../styles/fonts"
+import Hamburger from "../svg/Hamburger"
 import { useState } from "react"
-import ArrowSvg from "./ArrowSvg"
-import DownLoadSvg from "./DownLoadSvg"
-import CloseSvg from "./CloseSvg"
+import ArrowSvg from "../svg/ArrowSvg"
+import DownLoadSvg from "../svg/DownLoadSvg"
+import CloseSvg from "../svg/CloseSvg"
 
 const ProyectNavbar = () => {
   const [openBurger, setOpenBurger] = useState(false);

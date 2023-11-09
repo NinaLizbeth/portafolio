@@ -1,7 +1,7 @@
 'use client'
 
 import { useRouter } from "next/navigation"
-import { fontRampart } from "../../../styles/fonts"
+import { fontRampart } from "../../../../styles/fonts"
 
 
 
