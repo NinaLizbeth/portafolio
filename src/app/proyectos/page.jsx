@@ -16,15 +16,14 @@ const Proyectos = () => {
     <section className="w-full  bg-green-300 ">
    
     
-      <h2  style={fontRampart.style} className="text-center  text-white py-20 text-8xl ">Proyectos...</h2>
-      <div className="flex flex-wrap gap-8  justify-center rounded-xl mx-20 h-full  ">
-    <div className="max-w-lg bg-yellow-200 rounded-3xl shadow-2xl ">
+      <h2  style={fontRampart.style} className="text-center  text-white lg:py-40 py-32 lg:text-8xl text-5xl">PROYECTOS...</h2>
+      <div className="flex flex-wrap gap-8  justify-center rounded-xl mx-20 h-auto lg:h-full lg:mt-0 -mt-20">
+    <div className=" lg:max-w-lg bg-yellow-200 rounded-3xl shadow-2xl ">
       <Image
       width={500}
       height={500}
-      
-      className="w-[90%] ml-5 py-5" src="https://res.cloudinary.com/dt7h6qci4/image/upload/v1698799776/Captura_de_pantalla_2023-10-31_214832_ojooqn.png" alt="" />
-      <h5 style={fontRampart.style} className="text-4xl   text-black px-2">
+      className="w-[90%] lg:ml-5 ml-4 py-5" src="https://res.cloudinary.com/dt7h6qci4/image/upload/v1698799776/Captura_de_pantalla_2023-10-31_214832_ojooqn.png" alt="" />
+      <h5 style={fontRampart.style} className="lg:text-4xl text-5xl  text-black px-2">
      BrightBooks
       </h5>
       <p style={FontKalam.style} className="font-normal text-black py-3 px-2">
@@ -38,9 +37,12 @@ const Proyectos = () => {
       
 
     </div>
-    <div className="max-w-lg bg-yellow-200 rounded-3xl shadow-2xl ">
-      <img  className="w-[90%] ml-5 py-5" src="https://res.cloudinary.com/dt7h6qci4/image/upload/v1698799776/Captura_de_pantalla_2023-10-31_214541_wpkzqm.png" alt="" />
-      <h5  style={fontRampart.style} className=" font-bold tracking-tight text-gray-900 px-2 dark:text-black text-4xl">
+    <div className="lg:max-w-lg bg-yellow-200 rounded-3xl shadow-2xl  ">
+      <Image
+      width={500}
+      height={500}
+        className="w-[90%] ml-5 py-5" src="https://res.cloudinary.com/dt7h6qci4/image/upload/v1698799776/Captura_de_pantalla_2023-10-31_214541_wpkzqm.png" alt="" />
+      <h5  style={fontRampart.style} className=" lg:text-4xl text-5xl  text-black px-2">
         Dolce Vita
       </h5>
       <p style={FontKalam.style} className="font-normal text-black py-3 px-2">
@@ -51,7 +53,10 @@ const Proyectos = () => {
       </div>
     </div>
     <div className="max-w-lg bg-yellow-200 rounded-3xl shadow-2xl  ">
-      <img  className="w-[90%] ml-5 py-5" src="https://res.cloudinary.com/dt7h6qci4/image/upload/v1698799734/qwe_b6hmgq.jpg" alt="" />
+      <Image
+      width={500}
+      height={500}
+      className="w-[90%] ml-5 py-5" src="https://res.cloudinary.com/dt7h6qci4/image/upload/v1698799734/qwe_b6hmgq.jpg" alt="" />
       <h5 style={fontRampart.style}  className=" font-bold  text-4xl text-black px-2">
         Traveling Book Store
       </h5>
@@ -63,7 +68,10 @@ const Proyectos = () => {
       </div>
     </div>
     <div className="max-w-lg bg-yellow-200 rounded-3xl shadow-2xl">
-      <img  className="w-[90%] ml-5 py-5" src="https://res.cloudinary.com/dt7h6qci4/image/upload/v1698799733/crud_1_fgldno.jpg" alt="" />
+      <Image
+      width={500}
+      height={500}
+        className="w-[90%] ml-5 py-5" src="https://res.cloudinary.com/dt7h6qci4/image/upload/v1698799733/crud_1_fgldno.jpg" alt="" />
       <h5 style={fontRampart.style}  className=" font-bold text-4xl  text-gray-900 px-2">
         Crud Veterinaria
       </h5>
@@ -75,8 +83,11 @@ const Proyectos = () => {
       </div>
     </div>
     <div className="max-w-lg bg-yellow-200 rounded-3xl shadow-2xl ">
-      <img  className="w-[90%] ml-5 py-5" src="https://res.cloudinary.com/dt7h6qci4/image/upload/v1698799734/readme1_lkdyuj.jpg" alt="" />
-      <h5 style={fontRampart.style}  className="text-2xl font-bold text-4xl tracking-tight text-black px-2 ">
+      <Image
+      width={500}
+      height={500}
+        className="w-[90%] ml-5 py-5" src="https://res.cloudinary.com/dt7h6qci4/image/upload/v1698799734/readme1_lkdyuj.jpg" alt="" />
+      <h5 style={fontRampart.style}  className="text-2xl font-bold tracking-tight text-black px-2 ">
         Dashboard-Covid
       </h5>
       <p style={FontKalam.style} className="font-normal text-black py-3 px-2">
@@ -87,7 +98,10 @@ const Proyectos = () => {
       </div>
     </div>
     <div style={FontKalam.style} className="max-w-lg bg-yellow-200 rounded-3xl shadow-2xl  ">
-      <img  className="w-[90%] h-64 ml-5 py-5" src="https://res.cloudinary.com/dt7h6qci4/image/upload/v1698802074/Captura_de_pantalla_2023-10-31_222726_rv0atk.png" alt="" />
+      <Image
+      width={500}
+      height={500}
+        className="w-[90%] h-64 ml-5 py-5" src="https://res.cloudinary.com/dt7h6qci4/image/upload/v1698802074/Captura_de_pantalla_2023-10-31_222726_rv0atk.png" alt="" />
       <h5 style={fontRampart.style}  className=" font-bold text-4xltracking-tight text-black px-2 text-4xl">
       Paw Patrol video game baby
       </h5>

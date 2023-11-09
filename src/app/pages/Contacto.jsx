@@ -4,6 +4,7 @@ import {  useState } from "react";
 import { fontRampart, fontSatisfy } from "../../../styles/fonts";
 import Swal from "sweetalert2";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 
 
@@ -123,11 +124,21 @@ Swal.fire({
                   className="w-full border border-gray-300 p-2 rounded-2xl focus:outline-none h-40"
                 />
               </div>
-              <div className=" flex justify-center items-center mt-4">
+            
+              <motion.div
+              drag
+              dragConstraints={{
+                top: -50,
+                left: -50,
+                right: 50,
+                bottom: 50,
+              }}
+               className=" flex justify-center items-center mt-4">
                 <button style={fontRampart.style} type="submit" className=" w-28 h-14 lg:ml-3 text-2xl bg-pink-300 text-white flex justify-center items-center px-4 py-2 rounded-xl hover:bg-green-200 hover:scale-125">
                   Enviar
                 </button>
-              </div>
+                </motion.div>
+              
             </form>
           </div>
         </div>

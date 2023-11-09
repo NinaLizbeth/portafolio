@@ -1,8 +1,19 @@
 import Image from "next/image"
 import { fontRampart, fontSatisfy } from "../../../styles/fonts"
+import { motion } from "framer-motion"
 
 
 const Skill = () => {
+  const  variantes ={
+    entrada:{
+      y: 0,
+      opacity:1
+    },
+    inicial:{
+      y: -100,
+      opacity:0
+    }
+  }
 
 
 
@@ -10,8 +21,19 @@ const Skill = () => {
 
     <>
 
-      <section id="sectionId" className="bg-pink-300 h-auto" >
+      <section
+      
+
+      id="sectionId" className="bg-pink-300 h-auto" >
+       
         <h3 style={fontRampart.style} className="text-white text-center lg:text-8xl text-5xl p-10">My Skills</h3>
+        <motion.div
+        
+        transition={{duration:1}}
+        initial="inicial"
+        whileInView="entrada"
+        variants={variantes}
+                >
         <div className="flex flex-col lg:flex-row lg:justify-around justify-center ">
           <div>
             <h4 style={fontRampart.style} className="lg:text-5xl text-4xl text-white lg:mr-40 text-center">Frontend</h4>
@@ -57,7 +79,7 @@ const Skill = () => {
         
         className=" hidden sm:block   ml-[35%] -mt-72  " src="https://res.cloudinary.com/dt7h6qci4/image/upload/v1698462236/Dise%C3%B1o_sin_t%C3%ADtulo_47_z9qngs.png" alt="" />
 
-
+</motion.div>
       </section>
 
 

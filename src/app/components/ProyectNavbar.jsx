@@ -1,9 +1,12 @@
 'use client'
 
 import Link from "next/link"
-import { FontKalam, fontSatisfy } from "../../../styles/fonts"
+import { FontKalam, fontRampart, fontSatisfy } from "../../../styles/fonts"
 import Hamburger from "../components/Hamburger"
 import { useState } from "react"
+import ArrowSvg from "./ArrowSvg"
+import DownLoadSvg from "./DownLoadSvg"
+import CloseSvg from "./CloseSvg"
 
 const ProyectNavbar = () => {
   const [openBurger, setOpenBurger] = useState(false);
@@ -20,19 +23,16 @@ const ProyectNavbar = () => {
               <Hamburger/>
             </button>
             {openBurger && (
-    <div className="bg-yellow-200  w-full h-screen z-50  ">
+    <div className="bg-yellow-200  w-full h-auto z-50  ">
             <ul className="flex flex-col justify-center items-center gap-5 mt-5">
-              <Link href="/" onClick={onToggleBurgerMenu} className="text-3xl" style={FontKalam.style} >Sobre mi</Link>
+              <Link href="/" onClick={onToggleBurgerMenu} className="text-3xl" style={FontKalam.style} >Inicio</Link>
               <hr className="w-full" />
-              <Link href="/" onClick={onToggleBurgerMenu} className="text-3xl" style={FontKalam.style} >skill</Link>
+              
+              <a href="/pdf/cv.pdf" onClick={onToggleBurgerMenu} className="text-3xl" style={FontKalam.style} >Descarga mi cv</a>
               <hr className="w-full" />
-              <Link href="" onClick={onToggleBurgerMenu} className="text-3xl"style={FontKalam.style}  >Proyectos</Link>
+              <a href="#contactoId" onClick={onToggleBurgerMenu} className="text-3xl" style={FontKalam.style}  >Contacto</a>
               <hr className="w-full" />
-              <a href="#footerId" onClick={onToggleBurgerMenu} className="text-3xl" style={FontKalam.style} >Descarga mi cv</a>
-              <hr className="w-full" />
-              <a href="#footerId" onClick={onToggleBurgerMenu} className="text-3xl" style={FontKalam.style}  >Contacto</a>
-              <hr className="w-full" />
-              <Link href="" onClick={onToggleBurgerMenu} className="text-3xl font-bold cursor-pointer text-violet-600">Cerrar</Link>
+              <Link href="" onClick={onToggleBurgerMenu} className="text-3xl font-bold cursor-pointer text-violet-600 -mt-10"><CloseSvg className="w-14 "/></Link>
             </ul>
           </div>
            )}
@@ -40,18 +40,23 @@ const ProyectNavbar = () => {
       <nav className="hidden sm:block absolute top-4 lefth-14 p-4 cursor-pointer">
         
         <ul className="flex flex-row gap-6 ml-auto">
-          <Link href="/"><li className="text-white p-2 rounded-lg  bg-pink-300 shadow-xl hover:scale-125">Inicio</li></Link>
+          <Link style={fontRampart.style} href="/"><li className="text-white text-2xl p-2 rounded-lg  bg-pink-300 shadow-xl hover:scale-125">Inicio</li></Link>
           
-          <Link href="/proyectos"><li className="text-white p-2 rounded-lg  bg-pink-300 shadow-xl hover:scale-125" >Proyectos</li></Link>
-          <li className="text-white p-2 rounded-lg  bg-pink-300 shadow-xl hover:scale-125">Descarga mi CV</li>
-          <a href="#contactoId"><li className="text-white p-2 rounded-lg  bg-pink-300 shadow-2xl  hover:scale-125">Contacto</li></a>
+          
+          
+          <a style={fontRampart.style} href="#contactoId"><li className="text-white p-2 rounded-lg  bg-pink-300 shadow-2xl  text-2xl hover:scale-125">Contacto</li></a>
           
         </ul>
+        <a href="/pdf/cv.pdf" download ><DownLoadSvg className="w-32 ml-[98%] l hover:scale-110 -mt-[49%]"/></a>
 
       
       </nav>
+      <div className="border bg-white hidden sm:block -ml-[15%] ">
+      <p style={fontSatisfy.style} className=" text-pink-400 flex justify-end ml-[33%] mt-28 absolute text-2xl">Descarga mi cv </p>
+ <ArrowSvg className="absolute w-14 ml-[30%] mt-5"/>
+ </div>
      
-      <Link href="/"><h2 style={fontSatisfy.style}  className="absolute lg:right-36 right-14 mt-7 lg:mt-5 text-5xl lg:text-6xl text-pink-400  hover:scale-125">Nina </h2></Link>
+      <Link href="/"><h2 style={fontSatisfy.style}  className="absolute lg:right-36 right-14 mt-10 lg:mt-5 text-4xl lg:text-6xl text-pink-400  hover:scale-125">Nina </h2></Link>
     </>
   )
 }

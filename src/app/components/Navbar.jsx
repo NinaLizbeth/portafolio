@@ -37,7 +37,7 @@ const Navbar = () => {
               <hr className="w-full" />
               <a href="#contactoId" onClick={onToggleBurgerMenu} className="text-3xl" style={fontRampart.style}  >Contacto</a>
               <hr className="w-full" />
-              <a href="" onClick={onToggleBurgerMenu} className="text-3xl" style={fontRampart.style} >Descarga mi cv</a>
+              <a href="/pdf/cv.pdf" onClick={onToggleBurgerMenu} className="text-3xl" style={fontRampart.style} >Descarga mi cv</a>
               <hr className="w-full" />
               <Link href="" onClick={onToggleBurgerMenu} className="text-3xl hover:scale-125 font-bold cursor-pointer text-violet-600"><CloseSvg className="w-14 "/></Link>
             </ul>
