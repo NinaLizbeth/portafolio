@@ -11,22 +11,25 @@ import Image from 'next/image'
 
 export default function Home() {
 
-
-
-
-  return (
+return (
     <>
       <Navbar/>
     <div className='flex flex-row w-full min-h-screen'>
-      <div className='h-screen bg-green-300 flex justify-center items-center w-full lg:w-3/5  flex-col p-10 md:pr-52 '>
+      <div  className='h-screen bg-green-300 flex justify-center items-center w-full lg:w-3/5  flex-col p-10 md:pr-52 '>
 
-       <p style={fontSatisfy.style}  className=' text-violet-400 font-bold text-4xl lg:text-5xl lg:text-start w-full   mb-3 lg:ml-0 ml-0  mt-20'>👋 Hola, soy Nina </p>
+       <p style={{...fontSatisfy.style, zIndex:1, transform: 'perspective(1000px)'}}  className=' text-violet-400 font-bold text-4xl lg:text-5xl animate-bounce lg:text-start w-full   mb-3 lg:ml-0 ml-0  mt-20' >👋 Hola, soy Nina </p>
        
-        <p className=' text-center lg:text-left  text-4xl   lg:text-7xl font-bold mb-7 '>Creo experiencias web únicas que fusionan  <span  
-style={fontRampart.style} className='text-pink-300 lg:text-7xl text-5xl font-bold hover:scale-150'
-        
-        >creatividad</span> y <span style={fontRampart.style}className='text-white lg:text-7xl text-5xl font-bold'>
-          tecnología.</span> ¡Descubre mi mundo digital!</p>
+        <p className=' text-center lg:text-left  text-4xl   lg:text-7xl font-bold mb-7 '>Creo experiencias web únicas que fusionan {" "}  
+        <span 
+          className='text-pink-300 lg:text-7xl text-5xl font-bold  animate-bounce'>
+          creatividad
+          </span> 
+          y 
+        <span
+         style={fontRampart.style}className='text-white lg:text-7xl text-5xl font-bold'>
+          tecnología.
+          </span>
+           ¡Descubre mi mundo digital!</p>
       </div>
       <div className='hidden sm:block bg-yellow-200 w-2/5 h-auto '></div>
       <Image

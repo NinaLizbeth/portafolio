@@ -27,7 +27,7 @@ const Navbar = () => {
               <Hamburger/>
             </button>
             {openBurger && (
-    <div className="bg-yellow-200 w-full h-auto rounded-2xl   ">
+    <div style={{ zIndex: 2 }} className="bg-yellow-200 w-full h-auto rounded-2xl   ">
             <ul className="flex flex-col justify-center items-center gap-5  content-center">
               <Link href="#aboutId" onClick={onToggleBurgerMenu} className="text-3xl mt-8" style={fontRampart.style} >Sobre mi</Link>
               <hr className="w-full" />
