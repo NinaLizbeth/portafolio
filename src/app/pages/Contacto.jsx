@@ -59,7 +59,7 @@ Swal.fire({
 
   return (
     <>
-      <section   id="contactoId" className="bg-slate-800 w-full h-full relative z-20">
+      <section   id="contactoId" className="bg-slate-600 w-full h-full relative z-20">
         <h2 style={fontRampart.style} className="text-white pt-10 lg:text-7xl text-5xl text-center">
           Hablemos...
         </h2>

@@ -23,14 +23,14 @@ const ProyectNavbar = () => {
               <Hamburger/>
             </button>
             {openBurger && (
-    <div className="bg-yellow-200  w-full h-auto z-50  ">
-            <ul className="flex flex-col justify-center items-center gap-5 mt-5">
-              <Link href="/" onClick={onToggleBurgerMenu} className="text-3xl" style={FontKalam.style} >Inicio</Link>
+    <div className="bg-yellow-200  w-full h-auto z-50 mt-12  ">
+            <ul className="flex flex-col justify-center items-center gap-5  content-center">
+              <Link href="/" onClick={onToggleBurgerMenu} className="text-3xl mt-8" style={fontRampart.style} >Inicio</Link>
               <hr className="w-full" />
               
-              <a href="/pdf/cv.pdf" onClick={onToggleBurgerMenu} className="text-3xl" style={FontKalam.style} >Descarga mi cv</a>
+              <a href="/pdf/cv.pdf" onClick={onToggleBurgerMenu} className="text-3xl mt-8" style={fontRampart.style}>Descarga mi cv</a>
               <hr className="w-full" />
-              <a href="#contactoId" onClick={onToggleBurgerMenu} className="text-3xl" style={FontKalam.style}  >Contacto</a>
+              <a href="#contactoId" onClick={onToggleBurgerMenu} className="text-3xl mt-8" style={fontRampart.style} >Contacto</a>
               <hr className="w-full" />
               <Link href="" onClick={onToggleBurgerMenu} className="text-3xl font-bold cursor-pointer text-violet-600 -mt-10"><CloseSvg className="w-14 "/></Link>
             </ul>

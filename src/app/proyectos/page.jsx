@@ -16,8 +16,8 @@ const Proyectos = () => {
     <>
       <ProyectNavbar />
       <section className="w-full  bg-green-300 ">
-<h2 style={fontRampart.style} className="text-center  text-white lg:py-40 py-32 lg:text-8xl text-5xl">PROYECTOS...</h2>
-<div className=" flex flex-wrap gap-7 justify-center items-center">
+<h2 style={fontRampart.style} className="text-center  text-white lg:py-40 py-36 lg:text-8xl text-5xl">PROYECTOS...</h2>
+<div className=" flex flex-wrap gap-7 justify-center items-center -mt-20">
 
 <CardProyectos
 imagen={"https://res.cloudinary.com/dt7h6qci4/image/upload/v1699568005/Captura_de_pantalla_2023-11-09_191226_rkkxms.png"}
@@ -56,7 +56,9 @@ parrafo={" ¡Únete a la Patrulla Canina en una emocionante aventura!  En este j
 link={'https://ninalizbeth.github.io/Paw-Patrol-Laurita/'}
 />
 </div>
+<div className="p-20 flex justify-center items-center">
 <GoButton/>
+</div>
 
 </section>
 <Contacto/>

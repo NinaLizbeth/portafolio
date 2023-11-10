@@ -27,7 +27,7 @@ const Navbar = () => {
               <Hamburger/>
             </button>
             {openBurger && (
-    <div  className="bg-yellow-200 w-full h-auto rounded-2xl mt-8  ">
+    <div  className="bg-yellow-200 w-full h-auto rounded-2xl mt-12  ">
             <ul className="flex flex-col justify-center items-center gap-5  content-center">
               <Link href="#aboutId" onClick={onToggleBurgerMenu} className="text-3xl mt-8" style={fontRampart.style} >Sobre mi</Link>
               <hr className="w-full" />
@@ -39,7 +39,7 @@ const Navbar = () => {
               <hr className="w-full" />
               <a href="/pdf/cv.pdf" onClick={onToggleBurgerMenu} className="text-3xl" style={fontRampart.style} >Descarga mi cv</a>
               <hr className="w-full" />
-              <Link href="" onClick={onToggleBurgerMenu} className="text-3xl hover:scale-125 font-bold cursor-pointer text-violet-600"><CloseSvg className="w-14 "/></Link>
+              <Link href="" onClick={onToggleBurgerMenu} className="text-3xl hover:scale-125  cursor-pointer text-violet-600"><CloseSvg className="w-14 -mt-16 "/></Link>
             </ul>
           </div>
            )}
