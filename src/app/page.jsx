@@ -18,11 +18,11 @@ export default function ome() {
 
       <div className='flex flex-row w-full min-h-screen'>
 
-        <div className='h-screen bg-green-300 flex justify-center items-center w-full lg:w-3/5  flex-col p-10 md:pr-52 '>
+        <div className='h-screen bg-green-300 flex justify-center items-center w-full lg:w-3/5  flex-col   p-16 md:pr-52 '>
 
         
 
-          <p style={fontSatisfy.style} className=' text-violet-400 text-4xl lg:text-5xl lg:animate-bounce lg:text-start w-full   mb-3 lg:ml-0 ml-0  mt-10' >👋 Hola, soy Nina </p>
+          <p style={fontSatisfy.style} className=' text-violet-400 text-3xl lg:text-5xl lg:animate-bounce lg:text-start w-full   mb-3 lg:ml-0   mt-10' >👋 Hola, soy Nina </p>
         
           <p className=' text-center lg:text-left  text-4xl   lg:text-7xl font-bold mb-7 text-slate-700 '>
   
@@ -40,7 +40,8 @@ export default function ome() {
               tecnología.
             </span>
 
-            ¡Descubre mi mundo digital!</p>
+            ¡Descubre mi mundo <br/> 
+            digital!</p>
   
 
 
