@@ -5,6 +5,9 @@ import { fontRampart, fontSatisfy } from "../../../styles/fonts";
 import Swal from "sweetalert2";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import GithubSvg from "../components/svg/GithubSvg";
+import LinkedinSvg from "../components/svg/LinkedinSvg";
+import Link from "next/link";
 
 
 
@@ -57,6 +60,17 @@ Swal.fire({
     }
   };
 
+  const  variantes ={
+    entrada:{
+      y: 0,
+      opacity:1
+    },
+    inicial:{
+      y: -100,
+      opacity:0
+    }
+  }
+
   return (
     <>
       <section   id="contactoId" className="bg-slate-600 w-full h-full relative z-20">
@@ -70,7 +84,12 @@ Swal.fire({
           height={500}
            className="hidden sm:block w-[32%] h-[40%] mt-24" src="https://res.cloudinary.com/dt7h6qci4/image/upload/v1699571408/flecha_1_uak5rg.png" alt="" />
 
-          <div className="w-full lg:w-1/2 mx-auto p-8">
+          <motion.div 
+          transition={{duration:1}}
+          initial="inicial"
+          whileInView="entrada"
+          variants={variantes}
+          className="w-full lg:w-1/2 mx-auto p-8">
             <form className="lg:py-36" onSubmit={handleSubmit}>
               <div className="mb-3 ronde">
                 <label style={fontSatisfy.style} htmlFor="name" className="block text-yellow-200 text-2xl ">
@@ -125,22 +144,21 @@ Swal.fire({
                 />
               </div>
             
-              <motion.div
-              drag
-              dragConstraints={{
-                top: -50,
-                left: -50,
-                right: 50,
-                bottom: 50,
-              }}
+              <div
+          
                className=" flex justify-center items-center mt-4">
                 <button style={fontRampart.style} type="submit" className=" w-28 h-14 lg:ml-3 text-2xl bg-pink-300 text-white flex justify-center items-center px-4 py-2 rounded-xl  hover:scale-125">
                   Enviar
                 </button>
-                </motion.div>
+                </div>
               
             </form>
-          </div>
+          </motion.div>
+        </div>
+        <div 
+     className="flex flex-col lg:flex-row ml-36  lg:justify-center lg:ml-[33%] lg:p-10  gap-4 cursor-pointer lg:-mt-20">
+        <Link href="https://github.com/NinaLizbeth"> <GithubSvg className="w-20 lg:w-24 lg:mb-5 hover:scale-x-110 "/> </Link> 
+          <Link href="https://www.linkedin.com/feed/"><LinkedinSvg className="w-20 lg:w-24 mb-10 hover:scale-125"/></Link>
         </div>
       </section>
     </>

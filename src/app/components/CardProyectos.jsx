@@ -2,6 +2,8 @@ import Image from "next/image"
 import Link from "next/link"
 import { FontKalam, fontRampart } from "../../../styles/fonts"
 
+import GithubProyectosSvg from "./svg/GithubProyectosSvg"
+
 
 export const CardProyectos = ( {imagen, titulo, parrafo, link}) => {
   return (
@@ -17,6 +19,11 @@ export const CardProyectos = ( {imagen, titulo, parrafo, link}) => {
     <p style={FontKalam.style} className="font-normal text-black py-3 px-2">
    {parrafo}
     </p>
+
+    <div className="flex justify-start w-16 translate-y-[55%] translate-x-[30%]">
+      <Link href={link} className="cursor-pointer"> <GithubProyectosSvg className="w-16 "/>
+   </Link>
+    </div>
 
 <div className="flex justify-end mb-5">
   <Link
