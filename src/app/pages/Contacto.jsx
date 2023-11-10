@@ -82,7 +82,7 @@ Swal.fire({
           <Image
           width={500}
           height={500}
-           className="hidden sm:block w-[32%] h-[40%] mt-24" src="https://res.cloudinary.com/dt7h6qci4/image/upload/v1699571408/flecha_1_uak5rg.png" alt="" />
+           className="hidden sm:block w-[32%] h-[40%] mt-36" src="https://res.cloudinary.com/dt7h6qci4/image/upload/v1699571408/flecha_1_uak5rg.png" alt="" />
 
           <motion.div 
           transition={{duration:1}}
@@ -157,8 +157,8 @@ Swal.fire({
         </div>
         <div 
      className="flex flex-col lg:flex-row ml-36  lg:justify-center lg:ml-[33%] lg:p-10  gap-4 cursor-pointer lg:-mt-20">
-        <Link href="https://github.com/NinaLizbeth"> <GithubSvg className="w-20 lg:w-24 lg:mb-5 hover:scale-x-110 "/> </Link> 
-          <Link href="https://www.linkedin.com/feed/"><LinkedinSvg className="w-20 lg:w-24 mb-10 hover:scale-125"/></Link>
+        <Link href="https://github.com/NinaLizbeth"> <GithubSvg className="w-16 lg:w-24 lg:mb-5 hover:scale-x-110 "/> </Link> 
+          <Link  href="https://www.linkedin.com/feed/"><LinkedinSvg className="w-16 lg:w-24 mb-24 hover:scale-125"/></Link>
         </div>
       </section>
     </>

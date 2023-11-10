@@ -22,9 +22,9 @@ export default function ome() {
 
         
 
-          <p style={fontSatisfy.style} className=' text-violet-400 text-3xl lg:text-5xl lg:animate-bounce lg:text-start w-full   mb-3 lg:ml-0   mt-10' >👋 Hola, soy Nina </p>
+          <p style={fontSatisfy.style} className=' text-violet-400 text-3xl lg:text-5xllg:animate-bounce lg:text-start w-full   mb-3 lg:ml-0   mt-40' >👋 Hola, soy Nina </p>
         
-          <p className=' text-center lg:text-left  text-4xl   lg:text-7xl font-bold mb-7 text-slate-700 '>
+          <p className=' text-center lg:text-left  text-4xl  lg:text-7xl font-bold mb-7 text-slate-700 '>
   
             Creo experiencias web únicas que fusionan {" "}
             <span
