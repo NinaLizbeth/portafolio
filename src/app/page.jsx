@@ -5,7 +5,7 @@ import { fontRampart, fontSatisfy } from '../../styles/fonts'
 import Contacto from './pages/Contacto'
 import Navbar from './components/navbar/Navbar'
 import Image from 'next/image'
-import { AnimateText } from './components/AnimateText'
+
 
 
 
@@ -20,9 +20,9 @@ export default function ome() {
 
         <div className='h-screen bg-green-300 flex justify-center items-center w-full lg:w-3/5  flex-col p-10 md:pr-52 '>
 
-          <div>
+        
 
-          <p style={fontSatisfy.style} className=' text-violet-400 font-bold text-4xl lg:text-5xl lg:animate-bounce lg:text-start w-full   mb-3 lg:ml-0 ml-0  mt-20' >👋 Hola, soy Nina </p>
+          <p style={fontSatisfy.style} className=' text-violet-400 text-4xl lg:text-5xl lg:animate-bounce lg:text-start w-full   mb-3 lg:ml-0 ml-0  mt-10' >👋 Hola, soy Nina </p>
         
           <p className=' text-center lg:text-left  text-4xl   lg:text-7xl font-bold mb-7 text-slate-700 '>
   
@@ -41,7 +41,7 @@ export default function ome() {
             </span>
 
             ¡Descubre mi mundo digital!</p>
-            </div>
+  
 
 
         </div>
