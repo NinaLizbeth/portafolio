@@ -5,7 +5,7 @@ import { FontKalam, fontRampart } from "../../../styles/fonts"
 import GithubProyectosSvg from "./svg/GithubProyectosSvg"
 
 
-export const CardProyectos = ( {imagen, titulo, parrafo, link}) => {
+export const CardProyectos = ( {imagen, titulo, parrafo, link, github}) => {
   return (
     
     <div className="max-w-xs lg:max-w-lg bg-violet-200 rounded-3xl shadow-2xl ">
@@ -20,9 +20,9 @@ export const CardProyectos = ( {imagen, titulo, parrafo, link}) => {
    {parrafo}
     </p>
 
-    <div className="flex justify-start w-16 translate-y-[55%] translate-x-[30%]">
-      <Link href={link} className="cursor-pointer"> <GithubProyectosSvg className="w-16 "/>
-   </Link>
+    <div className="flex justify-start w-16 translate-y-[55%] translate-x-[30%] hover:scale-125">
+      <a href={github} className="cursor-pointer"> <GithubProyectosSvg className="w-16 "/>
+   </a>
     </div>
 
 <div className="flex justify-end mb-5">

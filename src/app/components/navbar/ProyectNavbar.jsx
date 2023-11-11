@@ -23,7 +23,7 @@ const ProyectNavbar = () => {
               <Hamburger/>
             </button>
             {openBurger && (
-    <div className="bg-yellow-200  w-full h-auto z-50 mt-12  ">
+    <div className="bg-yellow-200  w-full h-auto  mt-12  ">
             <ul className="flex flex-col justify-center items-center gap-5  content-center">
               <Link href="/" onClick={onToggleBurgerMenu} className="text-3xl mt-8" style={fontRampart.style} >Inicio</Link>
               <hr className="w-full" />
