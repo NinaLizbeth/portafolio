@@ -15,10 +15,11 @@ const Proyectos = () => {
   return (
     <>
       <ProyectNavbar />
-      <section className="w-full  bg-green-300 p-5 ">
-<h2 style={fontRampart.style} className="text-center lg:pl-[35%] text-white lg:w-[35%] lg:text-8xl lg:pt-[10%] lg:translate-y-[0] translate-y-[250%] text-5xl">PROYECTOS...</h2>
-
-<div className=" flex flex-wrap gap-7 justify-center items-center translate-y-[4%] lg:translate-y-[10%]">
+      <section className="w-full  bg-green-300 ">
+            <div className="pt-36">
+<h2 style={fontRampart.style} className="text-center lg:pl-[35%] text-white lg:w-[35%] lg:text-8xl lg:pt-[5%] text-5xl">PROYECTOS...</h2>
+</div>
+<div className=" flex flex-wrap gap-7 justify-center items-center mt-20 ">
 
 <CardProyectos
 imagen={"https://res.cloudinary.com/dt7h6qci4/image/upload/v1699568005/Captura_de_pantalla_2023-11-09_191226_rkkxms.png"}
@@ -63,7 +64,7 @@ link={'https://ninalizbeth.github.io/Paw-Patrol-Laurita/'}
 github={"https://github.com/NinaLizbeth/Paw-Patrol-Laurita"}
 />
 </div>
-<div className="lg:p-[5%] p-[30%] mt-28 lg:mt-24 flex justify-center items-center">
+<div className="lg:p-20 p-[15%] mt-3 lg:px lg:mt-10 flex justify-center items-center">
 <GoButton/>
 </div>
 
