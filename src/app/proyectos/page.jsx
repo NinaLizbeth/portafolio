@@ -8,10 +8,12 @@ import { fontRampart } from "../../../styles/fonts"
 
 import Contacto from "../pages/Contacto"
 import GoButton from "../components/svg/GoButton"
+import { motion } from "framer-motion"
 
 
 
 const Proyectos = () => {
+
   return (
     <>
       <ProyectNavbar />
@@ -19,7 +21,9 @@ const Proyectos = () => {
             <div className="pt-36">
 <h2 style={fontRampart.style} className="text-center lg:pl-[35%] text-white lg:w-[35%] lg:text-8xl lg:pt-[5%] text-5xl">PROYECTOS...</h2>
 </div>
-<div className=" flex flex-wrap gap-7 justify-center items-center mt-20 ">
+<div
+
+className=" flex flex-wrap gap-7 justify-center items-center mt-20 ">
 
 <CardProyectos
 imagen={"https://res.cloudinary.com/dt7h6qci4/image/upload/v1699568005/Captura_de_pantalla_2023-11-09_191226_rkkxms.png"}
