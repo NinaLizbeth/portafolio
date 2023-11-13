@@ -21,7 +21,7 @@ export default function Home() {
         <div className='h-screen bg-green-300 flex justify-center items-center w-full lg:w-3/5  flex-col   p-16 lg:pr-52 '>
 
         
-<article className='text-3xl lg:text-6xl '>
+<article className='text-3xl md:text-5xl '>
           <p style={fontSatisfy.style} className=' text-violet-400 lg:animate-bounce lg:text-start w-full   mb-3 lg:ml-0   mt-20 md:mt-40' >👋 Hola, soy Nina </p>
         
           <p className=' text-center lg:text-left   lg:text-7xl font-bold mb-7 text-slate-700  '>
