@@ -21,8 +21,8 @@ export const CardProyectos = ( {imagen, titulo, parrafo, link, github}) => {
     </p>
 
     <div className="flex justify-start w-16 translate-y-[55%] translate-x-[30%] hover:scale-125">
-      <a href={github} className="cursor-pointer"> <GithubProyectosSvg className="w-16 "/>
-   </a>
+      <Link href={github} className="cursor-pointer"> <GithubProyectosSvg className="w-16 "/>
+   </Link>
     </div>
 
 <div className="flex justify-end mb-5">

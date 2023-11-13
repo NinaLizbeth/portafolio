@@ -82,7 +82,7 @@ Swal.fire({
           <Image
           width={500}
           height={500}
-           className="hidden sm:block w-[32%] h-[40%] mt-36" src="https://res.cloudinary.com/dt7h6qci4/image/upload/v1699734862/flecha_4_zoj6sd.png" alt="" />
+           className="hidden md:block w-[32%] h-[40%] mt-36" src="https://res.cloudinary.com/dt7h6qci4/image/upload/v1699734862/flecha_4_zoj6sd.png" alt="" />
 
           <motion.div 
           transition={{duration:1}}

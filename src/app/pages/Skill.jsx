@@ -77,7 +77,7 @@ const Skill = () => {
         width={500}
         height={500}
         
-        className=" hidden sm:block   ml-[35%] -mt-72  " src="https://res.cloudinary.com/dt7h6qci4/image/upload/v1698462236/Dise%C3%B1o_sin_t%C3%ADtulo_47_z9qngs.png" alt="" />
+        className=" hidden md:block   ml-[35%] -mt-72  " src="https://res.cloudinary.com/dt7h6qci4/image/upload/v1698462236/Dise%C3%B1o_sin_t%C3%ADtulo_47_z9qngs.png" alt="" />
 
 </motion.div>
       </section>

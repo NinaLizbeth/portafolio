@@ -21,7 +21,7 @@ const Navbar = () => {
 
   return (
     <>
-    <nav className="lg:hidden  absolute mt-3  w-full p-2 cursor-pointer">
+    <nav className="md:hidden block  absolute mt-3  w-full p-2 cursor-pointer">
     <button onClick={onToggleBurgerMenu} data-collapse-toggle="navbar-search" type="button" className="inline-flex items-center p-2 w-16 h-16 hover:scale-125 justify-center text-sm text-gray-500 rounded-lg md:hidden " aria-controls="navbar-search" aria-expanded="false">
               <span className="sr-only  ">Abrir menu principal</span>
               <Hamburger/>
@@ -44,7 +44,7 @@ const Navbar = () => {
           </div>
            )}
       </nav>
-      <nav className="hidden sm:block absolute top-4 lefth-14 p-4 cursor-pointer">
+      <nav className="hidden md:block absolute top-4 lefth-14 p-4 cursor-pointer">
         
         <ul className="flex flex-row gap-6 ml-auto">
           <a style={fontRampart.style} href="#aboutId"><li className="text-white p-2 rounded-lg  bg-pink-300 shadow-xl hover:scale-125 text-2xl">Sobre mi</li></a>
@@ -59,7 +59,7 @@ const Navbar = () => {
 
       
       </nav>
-      <div className="border bg-white hidden sm:block ">
+      <div className="border bg-white hidden md:block ">
       <p style={fontSatisfy.style} className=" text-pink-400 flex justify-end ml-[34%] mt-28 absolute text-2xl">Descarga mi cv </p>
  <ArrowSvg className="absolute w-14 ml-[30%] mt-5"/>
  </div>
