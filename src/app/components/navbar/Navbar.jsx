@@ -22,12 +22,12 @@ const Navbar = () => {
   return (
     <>
     <nav className="md:hidden block  absolute mt-3  w-full p-2 cursor-pointer">
-    <button onClick={onToggleBurgerMenu} data-collapse-toggle="navbar-search" type="button" className=" absolute inline-flex items-center p-2 w-12 h-12 hover:scale-125 justify-center text-sm text-gray-500 rounded-lg  " aria-controls="navbar-search" aria-expanded="false">
+    <button onClick={onToggleBurgerMenu} data-collapse-toggle="navbar-search" type="button" className="inline-flex items-center p-2 w-16 h-16 hover:scale-125 justify-center text-sm text-gray-500 rounded-lg  " aria-controls="navbar-search" aria-expanded="false">
               <span className="sr-only  ">Abrir menu principal</span>
               <Hamburger/>
             </button>
             {openBurger && (
-    <div  className="bg-yellow-200 w-full h-auto rounded-2xl mt-24  ">
+    <div  className="bg-yellow-200 w-full h-auto rounded-2xl mt-12  ">
             <ul className="flex flex-col justify-center items-center gap-5  content-center">
               <Link href="#aboutId" onClick={onToggleBurgerMenu} className="text-3xl mt-8" style={fontRampart.style} >Sobre mi</Link>
               <hr className="w-full" />

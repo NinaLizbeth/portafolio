@@ -156,7 +156,7 @@ Swal.fire({
           </motion.div>
         </div>
         <div 
-     className="flex flex-col lg:flex-row ml-36  lg:justify-center lg:ml-[33%] lg:p-10  gap-4 cursor-pointer lg:-mt-20">
+     className="flex flex-col lg:flex-row ml-40  md:justify-center lg:ml-[33%] lg:p-10  gap-4 cursor-pointer lg:-mt-20">
         <Link href="https://github.com/NinaLizbeth"> <GithubSvg className="w-16 lg:w-24 lg:mb-5 hover:scale-x-110 "/> </Link> 
           <Link  href="https://www.linkedin.com/feed/"><LinkedinSvg className="w-16 lg:w-24 mb-24 hover:scale-125"/></Link>
         </div>
