@@ -5,6 +5,8 @@ import { fontRampart, fontSatisfy } from '../../styles/fonts'
 import Contacto from './pages/Contacto'
 import Navbar from './components/navbar/Navbar'
 import Image from 'next/image'
+import { motion } from 'framer-motion';
+
 
 
 
@@ -12,7 +14,8 @@ import Image from 'next/image'
 
 export default function Home() {
 
-  return (
+  
+return (
     <>
       <Navbar />
 
@@ -24,7 +27,11 @@ export default function Home() {
 <article className='text-3xl md:text-5xl '>
           <p style={fontSatisfy.style} className=' text-violet-400 lg:animate-bounce lg:text-start w-full   mb-3 lg:ml-0   mt-20 md:mt-40' >👋 Hola, soy Nina </p>
         
-          <p className=' text-center lg:text-left   lg:text-7xl font-bold mb-7 text-slate-700  '>
+          <motion.p
+          initial={{ x: '-100vw' }}
+          animate={{ x: 0 }}
+          transition={{ type: 'spring', stiffness: 50, damping: 10 }}
+          className=' text-center lg:text-left   lg:text-7xl font-bold mb-7 text-slate-700  '>
   
             Creo experiencias web únicas que fusionan {" "}
             <span
@@ -41,7 +48,7 @@ export default function Home() {
             </span>
 
             ¡Descubre mi mundo <br/> 
-            digital!</p>
+            digital!</motion.p>
             </article>
 
 
@@ -49,10 +56,13 @@ export default function Home() {
 
 
         <div className='hidden  md:block  bg-yellow-200 w-2/5 h-auto '></div>
+
+      
         <Image
           width={500}
           height={500}
-          className='hidden md:block absolute w-1/4 left-[60%] -translate-x-[50%] top-[50%] -translate-y-[50%] ' alt='principal' src='https://res.cloudinary.com/dt7h6qci4/image/upload/v1698107663/Dise%C3%B1o_sin_t%C3%ADtulo_19_iw6hbd.png' />
+          style={{ zIndex: 1 }}
+          className='hidden md:block absolute w-1/4 left-[60%] transform -translate-x-[50%] top-[50%] -translate-y-[50%] ' alt='principal' src='https://res.cloudinary.com/dt7h6qci4/image/upload/v1698107663/Dise%C3%B1o_sin_t%C3%ADtulo_19_iw6hbd.png' />
 
 
 
@@ -60,7 +70,8 @@ export default function Home() {
         <Image
           width={500}
           height={500}
-          className='hidden md:block absolute w-44 left-[75%] -translate-x-[50%] top-[57%]  ' alt='westy' src='https://res.cloudinary.com/dt7h6qci4/image/upload/v1698111457/Meories_4_ymhfun.png' />
+          style={{ zIndex: 1 }}
+          className='hidden md:block absolute w-44 left-[75%] transform -translate-x-[50%] top-[57%]  ' alt='westy' src='https://res.cloudinary.com/dt7h6qci4/image/upload/v1698111457/Meories_4_ymhfun.png' />
 
 
       </div>
