@@ -11,6 +11,11 @@ const nextConfig = {
           },
         ],
       },
+
+      // Desactivar la optimización y minificación
+  optimization: {
+    minimize: false,
+  },
 }
 
 module.exports = nextConfig
