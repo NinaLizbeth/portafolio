@@ -25,25 +25,25 @@ return (
 
         
 <article className='text-3xl md:text-5xl '>
-          <p style={fontSatisfy.style} className=' text-violet-400 lg:animate-bounce lg:text-start w-full   mb-3 lg:ml-0   mt-20 md:mt-40' >👋 Hola, soy Nina </p>
+          <p style={fontSatisfy.style} className=' text-violet-400 md:animate-bounce md:text-start w-full   mb-3 lg:ml-0   mt-20 md:mt-40' >👋 Hola, soy Nina </p>
         
           <motion.p
           initial={{ x: '-100vw' }}
           animate={{ x: 0 }}
           transition={{ type: 'spring', stiffness: 50, damping: 10 }}
-          className=' text-center lg:text-left   lg:text-7xl font-bold mb-7 text-slate-700  '>
+          className=' text-center md:text-left   md:text-7xl font-bold mb-7 text-slate-700  '>
   
             Creo experiencias web únicas que fusionan {" "}
             <span
             style={fontRampart.style}
-              className='text-pink-300 lg:text-7xl text-4xl font-bold '>
+              className='text-pink-300 md:text-7xl text-4xl font-bold '>
               creatividad{ " "}
             </span>
 
             y {" "}
 
             <span
-              style={fontRampart.style} className='text-white lg:text-7xl text-4xl font-bold'>
+              style={fontRampart.style} className='text-white md:text-7xl text-4xl font-bold'>
               tecnología.
             </span>
 

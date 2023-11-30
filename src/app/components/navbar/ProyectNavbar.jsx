@@ -53,7 +53,7 @@ const ProyectNavbar = () => {
       </nav>
       <div className="border bg-white hidden sm:block -ml-[15%] ">
       <p style={fontSatisfy.style} className=" text-pink-400 flex justify-end ml-[33%] mt-28 absolute text-2xl">Descarga mi cv </p>
- <ArrowSvg className="absolute w-14 ml-[30%] mt-5"/>
+ <ArrowSvg className="absolute w-14 md:ml-[30%] mt-5"/>
  </div>
      
       <Link href="/"><h2 style={fontSatisfy.style}  className="absolute lg:right-36 right-14 mt-10 lg:mt-5 text-4xl lg:text-6xl text-pink-400  hover:scale-125">Nina </h2></Link>

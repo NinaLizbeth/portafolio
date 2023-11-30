@@ -63,8 +63,8 @@ const Navbar = () => {
       
       </nav>
       <div className="border bg-white hidden md:block ">
-      <p style={fontSatisfy.style} className=" text-pink-400 flex justify-end ml-[34%] mt-28 absolute text-2xl">Descarga mi cv </p>
- <ArrowSvg className="absolute w-14 ml-[30%] mt-5"/>
+      <p style={fontSatisfy.style} className=" text-pink-400 flex justify-end md:ml-[40%] lg:ml-[33%]  mt-28 absolute text-2xl">Descarga mi cv </p>
+ <ArrowSvg className="absolute w-14 md:ml-[29%] mt-5"/>
  </div>
      
       <Link href="/"><h2 style={fontSatisfy.style}  className="absolute lg:right-36 right-14 mt-7 lg:mt-5 text-4xl lg:text-6xl text-pink-400  hover:scale-125">Nina </h2></Link>

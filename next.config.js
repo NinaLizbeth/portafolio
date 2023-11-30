@@ -12,7 +12,7 @@ const nextConfig = {
         ],
       },
 
-      optimizeCss: false,
+    
 
 }
 
