@@ -48,7 +48,20 @@ const Skill = () => {
               <li style={fontRampart.style} className="bg-yellow-200 text-black text-center  rounded-3xl text-3xl mb-4 shadow-xl">Boostrap</li>
               <li style={fontRampart.style}className="bg-yellow-200 text-black text-center  rounded-3xl text-3xl mb-4 shadow-xl">Tailwind</li>
             </ul>
-          </div>
+            
+            
+            <h4 style={fontRampart.style} className="lg:text-5xl text-4xl text-white lg:mr-36 text-center mt-20">Tools</h4>
+            <ul className="lg:p-0 p-14 lg:mr-0 lg:mt-6 lg:w-[70%]">
+              <li style={fontRampart.style} className="bg-yellow-200 text-black rounded-3xl text-center text-3xl mb-4 shadow-xl ">Git</li>
+              <li style={fontRampart.style} className="bg-yellow-200 text-black rounded-3xl text-center text-3xl mb-4 shadow-xl" >GitHub</li>
+              <li style={fontRampart.style} className="bg-yellow-200 text-black rounded-3xl text-center text-3xl mb-4 shadow-xl" >Postman</li>
+              <li style={fontRampart.style} className="bg-yellow-200 text-black rounded-3xl text-center text-3xl mb-4 shadow-xl" >Firebase</li>
+              <li style={fontRampart.style} className="bg-yellow-200 text-black rounded-3xl text-center text-3xl mb-4 shadow-xl" >Vercel</li>
+         
+              </ul>
+              
+              </div>
+          
           <div>
             <h4 style={fontRampart.style} className="lg:text-5xl text-4xl text-white lg:mr-40 text-center">Backend</h4>
             <ul className="lg:p-0 p-14 lg:mr-36 lg:mt-6">
@@ -56,13 +69,12 @@ const Skill = () => {
               <li style={fontRampart.style} className="bg-yellow-200 text-black rounded-3xl text-center text-3xl mb-4 shadow-xl ">Express</li>
               <li style={fontRampart.style} className="bg-yellow-200 text-black rounded-3xl text-center text-3xl mb-4 shadow-xl" >MongoDB</li>
 
-              <h4 style={fontRampart.style} className="lg:text-5xl text-4xl text-white lg:mr-30 text-center mt-20">Otros</h4>
+              
+              <h4 style={fontRampart.style} className="lg:text-5xl text-4xl text-white lg:mr-30 text-center mt-20">Cloud/PAAS</h4>
             <ul className="lg:p-0 p-14 lg:mr-0 lg:mt-6">
-              <li style={fontRampart.style} className="bg-yellow-200 text-black rounded-3xl text-center text-3xl mb-4 shadow-xl ">Git</li>
-              <li style={fontRampart.style} className="bg-yellow-200 text-black rounded-3xl text-center text-3xl mb-4 shadow-xl" >GitHub</li>
-              <li style={fontRampart.style} className="bg-yellow-200 text-black rounded-3xl text-center text-3xl mb-4 shadow-xl" >Render</li>
               <li style={fontRampart.style} className="bg-yellow-200 text-black rounded-3xl text-center text-3xl mb-4 shadow-xl" >Firebase</li>
               <li style={fontRampart.style} className="bg-yellow-200 text-black rounded-3xl text-center text-3xl mb-4 shadow-xl" >Vercel</li>
+         <li style={fontRampart.style} className="bg-yellow-200 text-black rounded-3xl text-center text-3xl mb-4 shadow-xl" >Render</li>
          
               </ul>
               
