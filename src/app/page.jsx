@@ -24,14 +24,14 @@ return (
         <div className='h-screen bg-green-300 flex justify-center items-center w-full lg:w-3/5  flex-col   p-16 lg:pr-52 '>
 
         
-<article className='text-3xl md:text-5xl '>
-          <p style={fontSatisfy.style} className=' text-violet-400 md:animate-bounce md:text-start w-full   mb-3 lg:ml-0   mt-20 md:mt-40' >👋 Hola, soy Nina </p>
+<article >
+          <p style={fontSatisfy.style} className=' text-violet-400 md:animate-bounce md:text-start w-full   mb-3 lg:ml-0   mt-20 md:mt-40 text-3xl md:text-4xl ' >👋 Hola, soy Nina </p>
         
           <motion.p
           initial={{ x: '-100vw' }}
           animate={{ x: 0 }}
           transition={{ type: 'spring', stiffness: 50, damping: 10 }}
-          className=' text-center md:text-left   md:text-7xl font-bold mb-7 text-slate-700  '>
+          className=' text-center md:text-left  md:text-7xl font-bold mb-7 text-slate-700  '>
   
             Creo experiencias web únicas que fusionan {" "}
             <span
@@ -49,6 +49,7 @@ return (
 
             ¡Descubre mi mundo <br/> 
             digital!</motion.p>
+   
             </article>
 
 

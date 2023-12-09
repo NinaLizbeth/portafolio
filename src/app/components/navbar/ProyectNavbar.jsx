@@ -46,17 +46,23 @@ const ProyectNavbar = () => {
 
           <a style={fontRampart.style} href="#contactoId"><li className="text-white p-2 rounded-lg  bg-pink-300 shadow-2xl  text-2xl hover:scale-125">Contacto</li></a>
 
+          <a className="relative -ml-5 -mt-10" href="/pdf/cv.pdf" download >
+          <DownLoadSvg className="w-32   hover:scale-110"/>
+          <div className="justify-center w-52 items-center top-5  absolute flex left-12 gap-2" >
+ <ArrowSvg  className="   w-14" id="arrow"/>
+      <p id="cv" style={fontSatisfy.style} className=" text-pink-400 inline-block    text-2xl ">Descarga mi cv </p>
+
+ </div>
+          </a>
+
         </ul>
-        <a href="/pdf/cv.pdf" download ><DownLoadSvg className="w-32 ml-[98%] l hover:scale-110 -mt-[49%]" /></a>
+
+        
+      
 
 
       </nav>
-      <div >
-        <p style={fontSatisfy.style} className="text-pink-400 flex justify-end ml-[23%] mt-28 absolute text-2xl" >
-          Descarga mi cv
-        </p>
-        <ArrowSvg className="absolute w-14 ml-[18%] mt-5" />
-      </div>
+      
 
 
       <Link href="/"><h2 style={fontSatisfy.style} className="absolute lg:right-36 right-14 mt-10 lg:mt-5 text-4xl lg:text-6xl text-pink-400  hover:scale-125">Nina </h2></Link>
